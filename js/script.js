@@ -3,12 +3,11 @@ var likeButtons = document.querySelectorAll('.likeButton');
 
 likeButtons.forEach(function (button) {
     button.addEventListener('click', function () {
-        // Trouver les éléments enfants 'likeIcon' et 'likeText' de ce bouton spécifique
         var likeIcon = button.querySelector('.likeIcon');
         var likeText = button.querySelector('.likeText');
 
         if (likeText.style.color === 'blue') {
-            // Revenir à l'état initial (gris)
+            // Revenir à l'état initial (noire)
             likeIcon.src = './img/miniature_unlike.png'; // Image de pouce gris
             likeText.style.color = 'black';
         } else {
